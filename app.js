@@ -28,6 +28,6 @@ app.get("*", function(req, res){
 	res.send("There is nothing on this page.");
 });
 
-app.listen(2000, function(){
-	console.log("The portfolio is coming along swell!");
-});
+app.listen(process.env.PORT || 2000, function(){
+	console.log("Server Started!");
+}) ;
